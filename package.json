@@ -1,0 +1,19 @@
+{
+  "name": "ui-kit",
+  "version": "0.0.1",
+  "description": "react ui kit",
+  "main": "./dist/index.js",
+  "scripts": {},
+  "author": "Hartaithan.",
+  "license": "ISC",
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  }
+}
