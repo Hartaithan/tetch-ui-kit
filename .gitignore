@@ -1,3 +1,27 @@
 .idea
 node_modules
 dist
+
+example/logs
+example/*.log
+example/npm-debug.log*
+example/yarn-debug.log*
+example/yarn-error.log*
+example/pnpm-debug.log*
+example/lerna-debug.log*
+
+example/node_modules
+example/dist
+example/dist-ssr
+example/*.local
+
+example/# Editor directories and files
+example/.vscode/*
+example/!.vscode/extensions.json
+example/.idea
+example/.DS_Store
+example/*.suo
+example/*.ntvs*
+example/*.njsproj
+example/*.sln
+example/*.sw?
