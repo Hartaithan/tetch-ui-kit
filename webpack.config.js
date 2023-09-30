@@ -6,7 +6,9 @@ module.exports = {
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "dist"),
-    libraryTarget: "umd",
+    library: {
+      type: "module",
+    },
     clean: true,
   },
   resolve: {
@@ -23,5 +25,8 @@ module.exports = {
         exclude: /node_modules/,
       },
     ],
+  },
+  experiments: {
+    outputModule: true,
   },
 };
