@@ -1,5 +1,5 @@
 {
-  "name": "ui-kit",
+  "name": "tetch-ui-kit",
   "version": "0.0.1",
   "description": "react ui kit",
   "main": "./dist/index.js",
@@ -20,5 +20,8 @@
   "peerDependencies": {
     "react": "*",
     "react-dom": "*"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
