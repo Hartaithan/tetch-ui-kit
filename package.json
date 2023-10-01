@@ -4,7 +4,10 @@
   "description": "react ui kit",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "relink": "npm unlink tetch-ui-kit && npm link",
+    "example:vite": "cd example-vite && npm run dev",
+    "example:cra": "cd example-cra && npm run start"
   },
   "author": "Hartaithan.",
   "license": "ISC",
