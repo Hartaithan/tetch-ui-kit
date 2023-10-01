@@ -1,14 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es5",
     "module": "ESNext",
     "jsx": "react",
     "strict": true,
     "esModuleInterop": true,
     "lib": ["es2015", "dom"],
-    "outDir": "./dist/",
+    "outDir": "dist",
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "declaration": true,
     "sourceMap": true,
-    "declaration": true
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist", "./src/stories"]
