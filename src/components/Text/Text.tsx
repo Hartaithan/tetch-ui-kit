@@ -1,9 +1,12 @@
 import * as React from "react";
-import { Typography } from "../../styles";
+import { Typography, colors } from "../../styles";
 import clsx from "../../utils/classes";
 import typography from "../../styles/typography/Typography.module.css";
+import { ColorProps } from "../../styles/colors/types";
 
-export interface TextProps extends React.ComponentPropsWithoutRef<"p"> {
+export interface TextProps
+  extends React.ComponentPropsWithoutRef<"p">,
+    ColorProps {
   tg?: Typography;
   td?: React.CSSProperties["textDecoration"];
   tt?: React.CSSProperties["textTransform"];
@@ -22,6 +25,9 @@ const Text: React.FC<TextProps> = (props) => {
     ta,
     size,
     fw,
+    c,
+    cd = 500,
+    style,
     ...rest
   } = props;
   return (
@@ -33,6 +39,8 @@ const Text: React.FC<TextProps> = (props) => {
         textAlign: ta,
         textTransform: tt,
         textDecoration: td,
+        color: c && cd && colors[c][cd],
+        ...style,
       }}
       {...rest}
     >
