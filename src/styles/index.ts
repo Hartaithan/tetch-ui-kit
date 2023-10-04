@@ -1,2 +1,3 @@
-export { Typography } from "./typography/index";
-export { colors, Colors, Depth } from "./colors/index";
+export { Typography } from "./typography/types";
+export { colors } from "./colors/index";
+export { Colors, Depth } from "./colors/types";

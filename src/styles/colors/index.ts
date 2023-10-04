@@ -1,30 +1,4 @@
-export type Colors =
-  | "gray"
-  | "brand"
-  | "error"
-  | "warning"
-  | "success"
-  | "blue-gray"
-  | "blue-light"
-  | "blue"
-  | "indigo"
-  | "purple"
-  | "pink"
-  | "rose"
-  | "orange";
-
-export type Depth =
-  | 25
-  | 50
-  | 100
-  | 200
-  | 300
-  | 400
-  | 500
-  | 600
-  | 700
-  | 800
-  | 900;
+import { Colors, Depth } from "./types";
 
 export const colors: Record<Colors, Record<Depth, string>> = {
   gray: {
