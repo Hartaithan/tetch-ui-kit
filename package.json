@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "description": "react ui kit",
   "scripts": {
-    "build": "cd library && npx webpack",
+    "build": "cd package && npx webpack",
     "example:vite": "cd example-vite && npm run dev",
     "example:cra": "cd example-cra && npm run start",
-    "storybook": "cd library && npx storybook dev -p 6006",
-    "build-storybook": "cd library && npx storybook build"
+    "storybook": "cd package && npx storybook dev -p 6006",
+    "build-storybook": "cd package && npx storybook build"
   },
   "author": "Hartaithan.",
   "license": "ISC"
