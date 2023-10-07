@@ -16,6 +16,8 @@ module.exports = {
   },
   externals: {
     react: "react",
+    "react-dom": "react-dom",
+    "styled-components": "styled-components",
   },
   module: {
     rules: [
@@ -26,15 +28,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              modules: true,
-            },
-          },
-        ],
+        use: ["style-loader", "css-loader"],
       },
     ],
   },

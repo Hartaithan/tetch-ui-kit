@@ -29,6 +29,7 @@
     "react-dom": "^18.2.0",
     "storybook": "^7.4.6",
     "style-loader": "^3.3.3",
+    "styled-components": "^6.0.8",
     "ts-loader": "^9.4.4",
     "typescript": "^5.2.2",
     "webpack": "^5.88.2",
@@ -36,7 +37,8 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-dom": "*"
+    "react-dom": "*",
+    "styled-components": "^6.0.8"
   },
   "files": [
     "dist"

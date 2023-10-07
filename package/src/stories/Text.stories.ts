@@ -38,6 +38,26 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     children: "Example",
+    c: "gray",
+    cd: 900,
+  },
+};
+
+export const TypographyTextXS: Story = {
+  args: {
+    children: "Text Extra Small",
+    tg: "text-xs",
+    c: "gray",
+    cd: 900,
+  },
+};
+
+export const TypographyDisplayMD: Story = {
+  args: {
+    children: "Display Medium",
+    tg: "display-md",
+    c: "gray",
+    cd: 900,
   },
 };
 
@@ -45,5 +65,7 @@ export const TypographyDisplayXXL: Story = {
   args: {
     children: "Display XXL",
     tg: "display-xxl",
+    c: "gray",
+    cd: 900,
   },
 };
