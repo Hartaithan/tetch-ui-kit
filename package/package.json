@@ -1,11 +1,10 @@
 {
   "name": "tetch-ui-kit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "react ui kit",
   "main": "./dist/index.js",
   "scripts": {
     "build": "webpack",
-    "relink": "npm unlink tetch-ui-kit && npm link",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
