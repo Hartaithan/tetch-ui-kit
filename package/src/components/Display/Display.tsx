@@ -21,7 +21,7 @@ const Display: React.FC<DisplayProps> = (props) => {
   } = props;
   return (
     <p
-      className={clsx(className, "display", styles[size], weights[weight])}
+      className={clsx(className, styles.display, styles[size], weights[weight])}
       {...rest}
     >
       {children}

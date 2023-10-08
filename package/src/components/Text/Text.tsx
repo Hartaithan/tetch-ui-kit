@@ -20,7 +20,10 @@ const Text: React.FC<TextProps> = (props) => {
     ...rest
   } = props;
   return (
-    <p className={clsx(className, styles[size], weights[weight])} {...rest}>
+    <p
+      className={clsx(className, styles.text, styles[size], weights[weight])}
+      {...rest}
+    >
       {children}
     </p>
   );
