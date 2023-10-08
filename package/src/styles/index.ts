@@ -1,3 +1,8 @@
-export { Typography } from "./typography/types";
+export {
+  Typography,
+  TypographyWeight,
+  TypographyWeightProps,
+} from "./typography/types";
+
 export { colors } from "./colors/index";
-export { Colors, Depth } from "./colors/types";
+export { Colors, ColorDepth, ColorProps } from "./colors/types";

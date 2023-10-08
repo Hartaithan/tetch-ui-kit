@@ -1,0 +1,30 @@
+.text {
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  color: var(--gray-900, #101828);
+}
+
+.text-xl {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.text-lg {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.text-md {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-sm {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-xs {
+  font-size: 12px;
+  line-height: 18px;
+}

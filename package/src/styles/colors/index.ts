@@ -1,6 +1,6 @@
-import { Colors, Depth } from "./types";
+import { Colors, ColorDepth } from "./types";
 
-export const colors: Record<Colors, Record<Depth, string>> = {
+export const colors: Record<Colors, Record<ColorDepth, string>> = {
   gray: {
     25: "#FCFCFD",
     50: "#F9FAFB",

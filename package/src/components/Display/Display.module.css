@@ -1,0 +1,39 @@
+.display {
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  color: var(--gray-900, #101828);
+}
+
+.display-xxl {
+  font-size: 72px;
+  line-height: 90px;
+  letter-spacing: -1.44px;
+}
+
+.display-xl {
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -1.2px;
+}
+
+.display-lg {
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+}
+
+.display-md {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.72px;
+}
+
+.display-sm {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.display-xs {
+  font-size: 24px;
+  line-height: 32px;
+}

@@ -1,49 +1,26 @@
 import * as React from "react";
-import { Typography, colors } from "../../styles";
 import clsx from "../../utils/classes";
-import typography from "../../styles/typography/Typography.module.css";
-import { ColorProps } from "../../styles/colors/types";
+import styles from "./Text.module.css";
+import weights from "../../styles/typography/TypographyWeight.module.css";
+import { TextTypography } from "./Text.types";
+import { TypographyWeightProps } from "../../styles/typography/types";
 
 export interface TextProps
   extends React.ComponentPropsWithoutRef<"p">,
-    ColorProps {
-  tg?: Typography;
-  td?: React.CSSProperties["textDecoration"];
-  tt?: React.CSSProperties["textTransform"];
-  ta?: React.CSSProperties["textAlign"];
-  size?: React.CSSProperties["fontSize"];
-  fw?: React.CSSProperties["fontWeight"];
+    TypographyWeightProps {
+  size?: TextTypography;
 }
 
 const Text: React.FC<TextProps> = (props) => {
   const {
     className,
     children,
-    tg = "text-md",
-    td,
-    tt,
-    ta,
-    size,
-    fw,
-    c,
-    cd = 500,
-    style,
+    size = "text-md",
+    weight = "regular",
     ...rest
   } = props;
   return (
-    <p
-      className={clsx(className, typography[tg])}
-      style={{
-        fontWeight: fw,
-        fontSize: size,
-        textAlign: ta,
-        textTransform: tt,
-        textDecoration: td,
-        color: c && cd && colors[c][cd],
-        ...style,
-      }}
-      {...rest}
-    >
+    <p className={clsx(className, styles[size], weights[weight])} {...rest}>
       {children}
     </p>
   );

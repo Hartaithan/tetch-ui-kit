@@ -13,7 +13,7 @@ export type Colors =
   | "rose"
   | "orange";
 
-export type Depth =
+export type ColorDepth =
   | 25
   | 50
   | 100
@@ -27,6 +27,6 @@ export type Depth =
   | 900;
 
 export interface ColorProps {
-  c?: Colors;
-  cd?: Depth;
+  color?: Colors;
+  depth?: ColorDepth;
 }

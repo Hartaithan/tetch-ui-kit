@@ -1,17 +1,17 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Text from "../components/Text/Text";
+import Display from "../components/Display/Display";
 
 const meta = {
-  title: "Components/Text",
-  component: Text,
+  title: "Components/Display",
+  component: Display,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
   args: {
     children: "Example",
-    size: "text-md",
+    size: "display-md",
     weight: "regular",
   },
   argTypes: {
@@ -19,7 +19,7 @@ const meta = {
       control: "radio",
     },
   },
-} satisfies Meta<typeof Text>;
+} satisfies Meta<typeof Display>;
 
 export default meta;
 
@@ -31,16 +31,16 @@ export const Default: Story = {
   },
 };
 
-export const TextSM: Story = {
+export const DisplayXS: Story = {
   args: {
-    children: "Text SM",
-    size: "text-sm",
+    children: "Display XS",
+    size: "display-xs",
   },
 };
 
-export const TextXL: Story = {
+export const DisplayXXL: Story = {
   args: {
-    children: "Text XL",
-    size: "text-xl",
+    children: "Display XXL",
+    size: "display-xxl",
   },
 };
