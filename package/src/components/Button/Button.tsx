@@ -1,14 +1,11 @@
 import * as React from "react";
 import styles from "./Button.module.css";
-import { ButtonSize } from "./Button.types";
+import { ButtonSize, ButtonVariant } from "./Button.types";
 import clsx from "../../utils/classes";
-import { ColorProps } from "../../styles/colors/types";
-import { colors } from "../../styles";
 
-export interface ButtonProps
-  extends React.ComponentPropsWithoutRef<"button">,
-    ColorProps {
+export interface ButtonProps extends React.ComponentPropsWithoutRef<"button"> {
   size?: ButtonSize;
+  variant?: ButtonVariant;
 }
 
 const Button: React.FC<ButtonProps> = (props) => {
@@ -16,18 +13,17 @@ const Button: React.FC<ButtonProps> = (props) => {
     className,
     children,
     size = "md",
-    c = "brand",
-    cd = 500,
-    style,
+    variant = "primary",
     ...rest
   } = props;
   return (
     <button
-      className={clsx(className, styles.button, styles[`button-${size}`])}
-      style={{
-        backgroundColor: c && cd && colors[c][cd],
-        ...style,
-      }}
+      className={clsx(
+        className,
+        styles.button,
+        styles[`button-${size}`],
+        styles[`button-${variant}`]
+      )}
       {...rest}
     >
       {children}
