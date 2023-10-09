@@ -6,3 +6,5 @@ export { TextTypography } from "./Text/Text.types";
 
 export { default as Display, DisplayProps } from "./Display/Display";
 export { DisplayTypography } from "./Display/Display.types";
+
+export { default as Input, InputProps } from "./Input/Input";
