@@ -64,9 +64,3 @@ export const SizeXXL: Story = {
     size: "xxl",
   },
 };
-
-export const ColorBlue: Story = {
-  args: {
-    children: "Blue color",
-  },
-};
