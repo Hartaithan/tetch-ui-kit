@@ -1,0 +1,45 @@
+# Example VITE
+
+example-vite/logs
+example-vite/*.log
+example-vite/npm-debug.log*
+example-vite/yarn-debug.log*
+example-vite/yarn-error.log*
+example-vite/pnpm-debug.log*
+example-vite/lerna-debug.log*
+
+example-vite/node_modules
+example-vite/dist
+example-vite/dist-ssr
+example-vite/*.local
+
+example-vite/# Editor directories and files
+example-vite/.vscode/*
+example-vite/!.vscode/extensions.json
+example-vite/.idea
+example-vite/.DS_Store
+example-vite/*.suo
+example-vite/*.ntvs*
+example-vite/*.njsproj
+example-vite/*.sln
+example-vite/*.sw?
+
+# Example CRA
+
+example-cra/node_modules
+example-cra/.pnp
+example-cra/.pnp.js
+
+example-cra/coverage
+
+example-cra/build
+
+example-cra/.DS_Store
+example-cra/.env.local
+example-cra/.env.development.local
+example-cra/.env.test.local
+example-cra/.env.production.local
+
+example-cra/npm-debug.log*
+example-cra/yarn-debug.log*
+example-cra/yarn-error.log*

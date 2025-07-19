@@ -3,6 +3,9 @@
   "version": "0.0.2",
   "description": "react ui kit",
   "main": "./dist/index.js",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "build": "webpack",
     "storybook": "storybook dev -p 6006",
